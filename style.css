@@ -1,0 +1,491 @@
+h2 {
+  font: small-caps bold 24px sans-serif;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  text-align: justify;
+  line-height: 25px;
+  padding: 0.3em;
+  margin: 0.5em;
+}
+h4 {text-align:center;}
+em {
+  font: italic 1.2em "Fira Sans", serif red;
+}
+.error {color: #FF0000;}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  background-color: #7D22FF;
+}
+ul.b {
+  list-style-type: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #aba8a8;
+  float: left;
+}
+
+.scrollDown {
+  background-color: yellow;
+  color: black;
+  padding: 30px
+}
+.scrollBox {
+  background-color: lightgrey;
+  padding: 30px 30px 2500px;
+}
+
+/* Linear Gradient - Top to Bottom */
+#grad1 {
+  height: 250px;
+  background-color: white; 
+  /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
+}
+/* Read More and Less Button */
+#more {display: none;}
+
+/* Buttons here */
+.button {
+  background-color: #FCFF39; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Back to Top Button here */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+/* Example Button here */
+.button {
+  background-color: yellow; 
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2 {
+  background-repeat: no-repeat;
+  background-position: -120px -120px, 0 0;
+  background-image: 
+    -webkit-linear-gradient(
+    top left,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: 
+    -moz-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: 
+    -o-linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  background-image: 
+    linear-gradient(
+    0 0,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 37%,
+    rgba(255, 255, 255, 0.8) 45%,
+    rgba(255, 255, 255, 0.0) 50%
+  );
+  -moz-background-size:  250% 250%, 100% 100%;
+  background-size: 250% 250%, 100% 100%;
+  -webkit-transition: background-position 0s ease;
+  -moz-transition: background-position 0s ease;
+  -o-transition: background-position 0s ease;
+  transition: background-position 0s ease;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-position: 0 0, 0 0;
+  -webkit-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+/* Example Flexbox here */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #D27FFF;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Images side-by-side here */
+img {
+  max-width:50%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Subscribe Form here */
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
+
+.containerForm {
+  padding: 20px;
+  background-color: #D27FFF;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #1ABC9C;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* Example Webpage here */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body, if needed */
+
+/* Header/logo Title */
+.note {
+  background: yellow;
+  padding: 5px;
+}
+.header {
+  padding: 60px;
+  text-align: center;
+  background-color: #1ABC9C;
+  background-image: linear-gradient(red, yellow);
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #7D22FF;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimgMain {
+  background-color: #7D22FF;
+  width: 100%;
+  padding: 20px;
+  height:200px;
+}
+.fakeimgThumbnail {
+  background-color: #7D22FF;
+  width: 100%;
+  padding: 20px;
+  height:60px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+/* Social Site Logos here */
+.fa  {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover, .faRound:hover {
+  opacity: 0.7;
+}
+
+.faRound {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px; 
+  border-radius: 50%;
+}
+
+.fa-facebook, .faRound {
+  background: #3B5998;
+  color: white;
+  float: left;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  float: left;
+}
+
+.fa-github {
+  background: #0c0c0c;
+  color: white;
+  float: left;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+  float: left;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  float: left;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  float: left;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  float: left;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+  float: left;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  float: left;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+  float: left;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+  float: left;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+  float: left;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+  float: left;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+  float: left;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+  float: left;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+  float: left;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+  float: left;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+  float: left;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+  float: left;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+  float: left;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+  float: left;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+  float: left;
+}

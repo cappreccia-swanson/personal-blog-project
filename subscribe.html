@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscribe</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="containerMain">
+    <!-- Subscription Form -->
+    <h2>Subscribe</h2>
+
+    <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a href="social.html">Social</a>
+    <a href="subscribe.html">Subscribe</a>
+  </div>
+    
+    <!-- Form Vaildation -->
+    
+    <p><span class="error">* required field</span></p>
+  <div class="containerForm">
+      <h2>Subscribe to my Newsletter</h2>
+      <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to my newsletter blahblahblah.</p>
+      <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">  
+        Name: <input type="text" name="name">
+        <span class="error">* <?php echo $nameErr;?></span>
+        <br><br>
+        E-mail: <input type="text" name="email">
+        <span class="error">* <?php echo $emailErr;?></span>
+        <br><br>
+        Website: <input type="text" name="website">
+        <span class="error"><?php echo $websiteErr;?></span>
+        <br><br>
+        Comment: <textarea name="comment" rows="5" cols="40"></textarea>
+        <br><br>
+        Gender:
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="other">Other
+        <span class="error">* <?php echo $genderErr;?></span>
+        <br><br>
+        <label>
+          <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+        </label>
+        <br><br>
+        <input type="submit" name="submit" value="Submit" disabled><br><br>  
+      </form>
+  </div>  
+
+    <!-- Footer -->
+  <div class="footer">
+    <h5>Footer</h5>
+    <h5>Cappreccia's Website</h5>
+  </div>
+    
+    <!-- ContainerMain closing div -->
+  </div>   
+  
+</body>
+</html>
