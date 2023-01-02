@@ -267,7 +267,7 @@ input[type=submit]:hover {
 /* Style the top navigation bar */
 .navbar {
   display: flex;
-  background-color: #7D22FF;
+  background-color: #5900D6;
 }
 
 /* Style the navigation bar links */
@@ -307,13 +307,15 @@ input[type=submit]:hover {
 
 /* Fake image, just for this example */
 .fakeimgMain {
-  background-color: #7D22FF;
+  background-color: #5900D6;
+  color: white;
   width: 100%;
   padding: 20px;
   height:200px;
 }
 .fakeimgThumbnail {
-  background-color: #7D22FF;
+  background-color: #5900D6;
+  color: white;
   width: 100%;
   padding: 20px;
   height:60px;
