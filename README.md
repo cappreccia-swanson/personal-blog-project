@@ -1,7 +1,7 @@
 # Learning to Code at 40
 
-## Coding Warrior [^1]
-[^1] Personal Blog Project
+## Coding Warrior 
+
 
 ### Join me as I learn to code
 
@@ -13,3 +13,5 @@
 * Curabitur aliquet quam id dui posuere blandit. Sed porttitor lectus nibh.
 * Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Nulla quis lorem ut libero malesuada feugiat.
 * Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Sed porttitor lectus nibh.
+
+My Personal Blog Project
