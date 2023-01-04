@@ -1,11 +1,11 @@
 # Learning to Code at 40
 
-## Coding Warrior 
+## Tiger's Den 
 
 
 ### Join me as I learn to code
 
-## About Me
+
 -------------
 
 ![Tiger, my spirit animal](https://user-images.githubusercontent.com/103009026/210217356-e6d0adb0-a864-4486-98c2-9471fbc18dac.jpg)
