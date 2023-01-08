@@ -1,0 +1,89 @@
+/* Flexbox Responsive */
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body, if needed.
+Header/logo Title */
+.note {
+  background: yellow;
+  padding: 5px;
+}
+.head {
+  padding: 60px;
+  text-align: center;
+  background-color: #1ABC9C;
+  background-image: linear-gradient(red, yellow);
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #7D22FF;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake Image placeholder boxes */
+.fakeimgMain {
+  background-color: #5900D6;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  height:200px;
+}
+.fakeimgThumbnail {
+  background-color: #5900D6;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  height:60px;
+}
+
+/* Footer */
+.foot {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
