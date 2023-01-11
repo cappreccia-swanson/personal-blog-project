@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  overflow: hidden;
+  /* This is used to make the navbar sticky, So that the
+    navbar stays at the top part even if we scroll */
+  position: sticky; 
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  
+/*it specifies the mouse cursor to be displayed
+    when it is pointed over the element */
+  cursor: pointer;
+}
+
+/* Style the navigation bar links */
+.nav-list {
+  width: 90%;
+  background-color: #5900D6;
+  color: white;
+  display: flex;
+  overflow: hidden;
+}
+.nav-list li {
+  list-style: none;
+  padding: 14px 16px;
+  float: left;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #5900D6;
+  color: white;
+}
+.nav-list li a {
+  display: inline;
+  text-decoration: none;
+}
+/* Change color on hover */
+.nav-list li a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Hamburger Menu Navbar  */
+/* Style the links inside the navigation bar */
+.topnav {
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  background-color: #5900D6;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+   background-color: yellow;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Style the page lists */
+ul {
+  list-style-type: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #aba8a8;
+  color: black;
+  float: left;
+}
+li a.active {
+  background-color:yellow;
+  color: black;
+}
