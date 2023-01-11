@@ -68,7 +68,7 @@ hr {
   margin: 10px;
 }
 /* Center Align Header text */
-#center_head {
+.center_head {
   margin: auto;
   padding: 70px 0;
   width: 50%;
