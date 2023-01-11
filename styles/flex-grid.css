@@ -1,0 +1,89 @@
+
+/*  CSS Grid */
+* {
+  box-sizing: border-box;
+}
+.parent {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  grid-template-areas: 
+  "hd"
+  "sd"
+  "main"
+  "ft";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; 
+  z-index: 1;
+}
+.box {
+  background-color: lightgray;
+  2px solid red;
+}
+/* row start/ column start/ row end/ column end */
+.header {
+  grid-area: hd;
+  z-index: 2;
+}
+.footer {
+  grid-area: ft;
+  z-index: 2;
+}
+.sidebar {
+  grid-area: sd;
+  z-index: 2;
+}
+.content {
+  grid-area: main;
+  z-index: 2;
+}
+
+/* Flexbox Responsive */
+/* Clear any previous styling */ 
+
+/* Style the body, if needed */
+/* Header/logo Title */
+.note {
+  background: yellow;
+  padding: 5px;
+  z-index: 2;
+}
+.head {
+  padding: 60px;
+  text-align: center;
+  background-color: white;
+  background-image: linear-gradient(red, yellow);
+  color: black;
+  font-weight: 600;
+  z-index: 2;
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 70px;
+  z-index: 1;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+  z-index: 2;
+}
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  z-index: 2;
+}
+/* Footer */
+.foot {
+  padding: 20px;
+  text-align: center;
+  background: white;
+  z-index: 2;
+}
