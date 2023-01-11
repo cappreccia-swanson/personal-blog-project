@@ -1,163 +1,121 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cappreccia's Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cappreccia's Coding Journey 2: Coding at 40</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="script.js"></script>
 </head>
 
 <body>
 
-  <!-- Note -->
-  <div class="note">
-    <h4>Resize the browser window to see the responsive effect.</h4>
-  </div>
-
-  <!-- Header -->
-  <div class="header">
-    <h1>Cappreccia's Website</h1>
-      <p>Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-  </div>
-
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <a href="personal-blog-project\index.html">Blog Homepage</a>
-    <a href="personal-blog-project\posts\post1.html">Recent Blog Post</a>
-    <a href="personal-blog-project\sites\social.html">Social Sharing</a>
-    <a href="personal-blog-project\sites\about.html">About</a>
-    <a href="personal-blog-project\sites\subscribe.html">Subscribe</a>
-    <a href="personal-blog-project\sites\merch.html">Merch</a>
-    <a href="personal-blog-project\sites\blog.html">Archive</a>
-  </div>
-
-  <!-- The flexible grid (content) -->
-  <div class="row">
-    <div class="side">
-      <!-- Side Section of blog -->
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, January 3, 2022</h5>
-      <div class="fakeimgThumbnail">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
+  <!-- Page Container -->
+  <div class="parent">
+    <div class="header">
+         <!-- Navigation Bar -->
+      <div class="topnav" id="myTopnav">       
+        <a href="index.html"  class="active">Home</a>
+        <a href="post.html">Post</a>
+        <a href="archive.html">Archive</a>
+        <a href="about.html">About</a>
+        <a href="social.html">Social</a>
+        <a href="subscribe.html">Subscribe</a>
+        <a href="merch.html">Merch</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
       
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, February 7, 2022</h5>
-      <div class="fakeimgThumbnail">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, March 7, 2022</h5>
-      <div class="fakeimgThumbnail">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-      
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, April 4, 2022</h5>
-      <div class="fakeimgThumbnail">Image</div>
-      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      <h3>More Text</h3>
-      <p>Lorem ipsum dolor sit ame.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-
-      <div class="fakeimgThumbnail">Image</div><br>
-      <div class="fakeimgThumbnail">Image</div><br>
-      <div class="fakeimgThumbnail">Image</div>
     </div>
-    <div class="main">
-      <!-- Main Section of blog -->
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, May 2, 2022</h5>
-      <div class="fakeimgMain">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <h2>Read More Read Less Button</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-      
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, June 6, 2022</h5>
-      <div class="fakeimgMain">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <h2>Read More Read Less Button</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, July 4, 2022</h5>
-      <div class="fakeimgMain">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <h2>Read More Read Less Button</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-
-      <h2>TITLE HEADING</h2>
-      <h5>Title description, August 1, 2022</h5>
-      <div class="fakeimgMain">Image</div>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      <h2>Read More Read Less Button</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
-      <button onclick="myFunction()" id="myBtn">Read more</button>
-      <br>
-
-      <h3>Lorem ipsum..</h3>
-      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
-      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p><br>
-      <h3>Lorem ipsum..</h3>
-      <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. 
-      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
-      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p><br>
-
-
-      <!-- Social Sites -->
-      <h1>Social Sites</h1>
-      <!-- nest flexbox here -->
-      <div>
-        <div><a href="https://github.com/cappreccia-swanson" target="_blank" class="fa fa-github"></a></div>
-        <div><a href="https://www.youtube.com/channel/UCeGdwPt6hwbJGoKpEQzMn8w" target="_blank" class="fa fa-youtube"></a></div>
-        <div><a href="https://www.linkedin.com/in/cappreccia-swanson" target="_blank" class="fa fa-linkedin"></a></div>
-        <div><a href="https://twitter.com/cappreccia_s" target="_blank" class="fa fa-twitter"></a></div>
+    
+    <div class="sidebar">
+        
+        <div class="fakeimgThumbnail"></div><br>
+        <h2>Past Blogs</h2>
+        <h5>2022</h5>
+        <ul>
+          <li><a href="post1.html">January</a></li>
+          <li><a href="post2.html">February</a></li>
+          <li><a href="post3.html">March</a></li>
+          <li><a href="post4.html">April</a></li>
+          <li><a href="post5.html">May</a></li>
+          <li><a href="post6.html">June</a></li>
+          <li><a href="post7.html">July</a></li>
+          <li><a href="post8.html">August</a></li>
+          <li><a href="post9.html">September</a></li>
+          <li><a href="post10.html">October</a></li>
+          <li><a href="post11.html">November</a></li>
+          <li><a href="post12.html">December</a></li>
+        </ul><br>
+        
+        <h4>Lorem Ipsum</h4>
+        <blockquote>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </blockquote>
+        <br>
+        <h3>Lorem Ipsum</h3>   
+        <dl>
+          <dt>Lorem ipsum dolor sit ame.</dt>
+              <dd><em>Lorem ipsum..</em></dd>
+              
+          <dt>Cras ultricies ligula sed magna dictum porta.</dt>
+              <dd><b>Lorem ipsum..</b></dd>
+              
+          <dt>Donec sollicitudin molestie malesuada.</dt>
+              <dd><u>Lorem ipsum..</u></dd>
+              
+          <dt>Proin eget tortor risus.</dt>
+              <dd>Lorem ipsum..</dd> 
+        </dl>  
+        <br>
+        
       </div>
 
-      <!-- closes main container div -->
+    <div class="content">
+      <div class="row">
+        <div class="fakeimgThumbnail"></div><br>
+        <div class="example example-3">
+        <article class="ticket">
+          <div class="ticket-meta">
+            <img src="https://wildcard.codestuff.io/tiger/200/300" alt="A tiger">    
+            <div class="author"></div>
+          </div>
+        </article>
+      </div><br>
+      <br>
+      <div>
+        <h3>TITLE HEADING</h3>
+        <h5>Title description, February 7, 2022</h5>        
+          <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim.</p>
+          <h3>Nulla porttitor accumsan tincidunt.</h3>
+          <p>Pellentesque in ipsum id orci porta dapibus.</p>
+          <h4>Lorem ipsum..</h4>
+          <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.</p>
+          <h3>Lorem Ipsum</h3>   
+          <dl>
+            <dt>Lorem ipsum dolor sit ame.</dt>
+                <dd><em>Lorem ipsum..</em></dd>
+                
+            <dt>Cras ultricies ligula sed magna dictum porta.</dt>
+                <dd><b>Lorem ipsum..</b></dd>
+                
+            <dt>Donec sollicitudin molestie malesuada.</dt>
+                <dd><u>Lorem ipsum..</u></dd>
+                
+            <dt>Proin eget tortor risus.</dt>
+                <dd>Lorem ipsum..</dd> 
+          </dl>  
+          <br>
+      </div>
+      </div>
+      <!-- Content div closes -->
     </div>
-
-    <!-- closes row container div -->
+    
+    <div class="footer">
+      <h5>Cappreccia's Coding Journey 2: Coding at 40 &copy;</h5>
+    </div>
+  
+    <!-- closing Page Container -->
   </div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <h5>Footer</h5>
-    <h5>Cappreccia's Website &copy;</h5>
-  </div>
-
 
 </body>
 </html>
