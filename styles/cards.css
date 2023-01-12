@@ -1,5 +1,5 @@
-/* Blog Post Cards */
-/* use "ticket" instead of "card"  */
+/* Complicated Blog Post Cards:
+use "ticket" instead of "card"  */
 * {
   margin: 0;
   padding: 0;
@@ -54,7 +54,7 @@
   .ticket-meta {
     overflow: auto;
     margin-top: auto;
-  /*  display: flex; */
+    display: flex; 
   }
   img {
     float: left;
