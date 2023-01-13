@@ -1,10 +1,10 @@
-@import url("styles/cards.css");
-@import url("styles/queries.css");
- /* @import url("styles/buttons.css"); */
-@import url("styles/logos.css");
-@import url("styles/forms.css");
-@import url("styles/flex-grid.css");
-@import url("styles/navbar.css");
+@import url("cards.css");
+@import url("queries.css");
+ /* @import url("buttons.css"); */
+@import url("logos.css");
+@import url("forms.css");
+@import url("flex-grid.css");
+@import url("navbar.css");
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
