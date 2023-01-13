@@ -34,9 +34,9 @@ hr {
   margin-bottom: 0.5em;
   margin-left: auto;
   margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
-  background-color: #5900D6;
+  border-style: double;
+  border-width: 50px;
+  background-color: #5900D6; 
 }
 
 /* Error Message */
@@ -50,23 +50,19 @@ hr {
   background-image: linear-gradient(red, yellow);
 }
 
-/* Fake Image placeholder boxes */
-.fakeimgMain {
-  background-color: #5900D6;
-  color: white;
-  width: 100%;
+/* Images */
+img {
+  max-width: 300px;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
   padding: 20px;
-  height:200px;
-  margin: 10px;
-}
-.fakeimgThumbnail {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #5900D6;
-  color: white;
-  width: 100%;
-  padding: 20px;
-  height:60px;
-  margin: 10px;
+  border: 10px solid orangered;
 }
+
 /* Center Align Header text */
 .center_head {
   margin: auto;
