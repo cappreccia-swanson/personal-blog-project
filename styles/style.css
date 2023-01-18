@@ -62,6 +62,12 @@ img {
   background-color: #5900D6;
   border: 10px solid orangered;
 }
+figure {
+  margin: auto;
+  padding: 70px 0;
+  width: 50%;
+  text-align: center;
+}
 
 /* Center Align Header text */
 .center_head {
