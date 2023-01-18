@@ -6,7 +6,6 @@ use "ticket" instead of "card"  */
   box-sizing: border-box;
 }
 .article-body p {
-  word-break: break-all;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -24,7 +23,7 @@ use "ticket" instead of "card"  */
   line-height: 1.4;
   width: 200px;
   margin-right: 1rem;
-  margin-bottom: 1rem;
+/*  margin-bottom: 1rem; */
 }
 .ticket {
   position: relative;
@@ -83,4 +82,9 @@ use "ticket" instead of "card"  */
   .author {
     float: none;
   }
+}
+.example {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10px;
 }
