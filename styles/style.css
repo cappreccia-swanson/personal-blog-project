@@ -1,6 +1,6 @@
 @import url("cards.css");
 @import url("queries.css");
- /* @import url("buttons.css"); */
+@import url("buttons.css"); 
 @import url("logos.css");
 @import url("forms.css");
 @import url("flex-grid.css");
@@ -63,9 +63,6 @@ img {
   border: 10px solid orangered;
 }
 figure {
-  margin: auto;
-  padding: 70px 0;
-  width: 50%;
   text-align: center;
 }
 
